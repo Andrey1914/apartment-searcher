@@ -33,6 +33,8 @@ export default {
 }
 
 .btn {
+    font-family: 'Montserrat';
+    font-size: 18px;
     cursor: pointer;
     display: inline-block;
     min-width: 220px;
@@ -40,7 +42,6 @@ export default {
     border: 1px solid transparent;
     background: #ff662d;
     color: #ffffff;
-    font-size: 18px;
 
     &--outlined {
         background: none;
