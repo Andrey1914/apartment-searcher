@@ -1,7 +1,7 @@
 <template>
     <div class="apartment-item">
         <div class="apartment-item__inner">
-            <img :src="imageSrc" alt="" class="apartment-item__photo" />
+            <img :src="imgSrc" alt="" class="apartment-item__photo" />
             <div class="apartment-item__container">
                 <p class="apartment-item__description">{{ description }}</p>
                 <div class="apartment-item__rating">
@@ -26,19 +26,19 @@ export default {
     props: {
         description: {
             type: String,
-            default: ''
+            default: '',
         },
         rating: {
             type: Number,
-            default: 0
+            default: 0,
         },
         price: {
             type: Number,
-            required: true
+            required: true,
         },
-        imageSrc: {
+        imgSrc: {
             type: String,
-            default: ''
+            default: '',
         }
     }
 }
