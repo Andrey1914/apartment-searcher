@@ -2,7 +2,7 @@ export default [
   {
     id: "5f689a2c09b16000e9a2f47b",
     title: "Delectus et iste.",
-    imgUrl: "../../assets/images/apartments/image1-1x.jpg",
+    imgUrl: require("../../assets/images/apartments/image1-3x.jpg"),
     description:
       "Debitis similique unde et eligendi sapiente in iure blanditiis distinctio. Cum nihil temporibus qui quam aut. Nesciunt qui eveniet eum quam voluptate numquam.",
     rating: 3,
@@ -19,7 +19,7 @@ export default [
   {
     id: "5f689a2c09b16000e9a2f47d",
     title: "Eaque suscipit incidunt.",
-    imgUrl: "../../assets/images/apartments/image2-1x.jpg",
+    imgUrl: require("../../assets/images/apartments/image2-3x.jpg"),
     description:
       "Hic dolorem ab est hic iusto sed fugiat id aut. Eum reprehenderit eius odit perspiciatis illo. Odit repellat praesentium. Ea consequatur vero sed pariatur dolores omnis. Sed omnis vel atque sapiente natus voluptas dolores. Magnam enim consequuntur iure cupiditate voluptatem rerum.",
     rating: 3,
@@ -36,7 +36,7 @@ export default [
   {
     id: "5f689a2c09b16000e9a2f48a",
     title: "Doloremque labore ullam molestiae quis quis eos consequatur.",
-    imgUrl: "../../assets/images/apartments/image3-1x.jpg",
+    imgUrl: require("../../assets/images/apartments/image3-3x.jpg"),
     description:
       "Quia cum sed qui. Tempore ab tenetur aut et itaque omnis exercitationem consequatur eum. Hic non ad atque magni error earum aspernatur. Dolores ipsa veniam.",
     rating: 1,
@@ -53,7 +53,7 @@ export default [
   {
     id: "5f689a2c09b16000e9a2f481",
     title: "Dolor at inventore et voluptas omnis unde.",
-    imgUrl: "../../assets/images/apartments/image4-1x.jpg",
+    imgUrl: require("../../assets/images/apartments/image4-3x.jpg"),
     description:
       "Nihil dolorem in qui et occaecati. Sit qui deleniti. Expedita doloremque fugit culpa sit vel labore.",
     rating: 3,
@@ -70,7 +70,7 @@ export default [
   {
     id: "5f689a2c09b16000e9a2f47c",
     title: "Sapiente sit consequuntur odit reprehenderit earum maxime.",
-    imgUrl: "../../assets/images/apartments/image5-1x.jpg",
+    imgUrl: require("../../assets/images/apartments/image5-3x.jpg"),
     description:
       "Voluptatem sed dolor. Voluptatem eos minus nostrum quis facilis voluptas fugiat. Vel voluptas molestiae nesciunt.",
     rating: 2,
@@ -87,7 +87,7 @@ export default [
   {
     id: "5f689a2c09b16000e9a2f47f",
     title: "Ut accusantium atque at aut aliquid distinctio corporis.",
-    imgUrl: "../../assets/images/apartments/image6-1x.jpg",
+    imgUrl: require("../../assets/images/apartments/image6-3x.jpg"),
     description:
       "Odit repudiandae autem hic eos. Fuga omnis laboriosam similique rerum. Delectus exercitationem a quod. Sunt nobis omnis expedita veniam sit minus eos culpa. Aliquid mollitia deserunt sed mollitia.",
     rating: 2,
@@ -105,7 +105,7 @@ export default [
     id: "5f689a2c09b16000e9a2f48c",
     title:
       "Sit similique cumque dolorem ut voluptatibus velit et dicta architecto.",
-    imgUrl: "../../assets/images/apartments/image7-1x.jpg",
+    imgUrl: require("../../assets/images/apartments/image7-3x.jpg"),
     description:
       "Soluta quo et rerum vel. Qui earum inventore. Dolores vero facilis ut mollitia nisi iusto a quis. Nesciunt asperiores dolorum magni qui. Omnis autem nulla cupiditate et rerum et iusto rem.",
     rating: 0,
@@ -122,7 +122,7 @@ export default [
   {
     id: "5f689a2c09b16000e9a2f485",
     title: "Nihil pariatur eum ab a ducimus nam.",
-    imgUrl: "../../assets/images/apartments/image8-1x.jpg",
+    imgUrl: require("../../assets/images/apartments/image8-3x.jpg"),
     description:
       "Quae aliquid odit aut quia. Sed aut sed quis repudiandae est consequatur id quo ut. Molestiae nemo maiores quis deleniti sequi et eaque architecto officia. Molestiae incidunt qui quia. Fugiat id eum totam porro autem.",
     rating: 1,
@@ -139,7 +139,7 @@ export default [
   {
     id: "5f689a2c09b16000e9a2f48b",
     title: "Adipisci voluptates accusamus officia aut id et ut hic.",
-    imgUrl: "../../assets/images/apartments/image9-1x.jpg",
+    imgUrl: require("../../assets/images/apartments/image9-3x.jpg"),
     description:
       "Rerum sed voluptas vero ut rerum at ad. Aliquam unde quia earum perspiciatis reiciendis maxime voluptatem. Officiis et est velit placeat adipisci dolores.",
     rating: 0,
@@ -156,7 +156,7 @@ export default [
   {
     id: "5f689a2c09b16000e9a2f47e",
     title: "Rerum ut consequatur et adipisci.",
-    imgUrl: "../../assets/images/apartments/image10-1x.jpg",
+    imgUrl: require("../../assets/images/apartments/image10-3x.jpg"),
     description:
       "Laboriosam ut nam molestiae. Minus est doloremque et aperiam sunt et. Rem earum illum. Dolor consequatur fugiat.",
     rating: 4,

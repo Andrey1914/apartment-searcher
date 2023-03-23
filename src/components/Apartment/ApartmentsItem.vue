@@ -8,7 +8,6 @@
                     <StarRating :rating="rating" />
                 </div>
                 <div class="apartment-item__price">UAH {{ price }}</div>
-
             </div>
         </div>
     </div>
@@ -47,9 +46,8 @@ export default {
 <style lang="scss" scoped>
 .apartment-item {
     position: relative;
-    width: 33.333%;
-    padding: 0 15px;
-    margin-bottom: 30px;
+    width: calc(100% / 3 - 20px);
+
 
     &__inner {
         position: relative;
@@ -75,7 +73,7 @@ export default {
 
     &__description {
         margin-bottom: 20px;
-        max-height: calc(1em * 1.4 * 3);
+        max-height: calc(1em * 1.4 * 4);
         overflow: hidden;
     }
 
