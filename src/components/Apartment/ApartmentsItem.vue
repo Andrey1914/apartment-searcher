@@ -1,5 +1,5 @@
 <template>
-    <div class="apartment-item">
+    <div class="apartment-item" @click="$emit('click')">
         <div class="apartment-item__inner">
             <img :src="imgSrc" alt="" class="apartment-item__photo" />
             <div class="apartment-item__container">
@@ -8,6 +8,7 @@
                     <StarRating :rating="rating" />
                 </div>
                 <div class="apartment-item__price">UAH {{ price }}</div>
+                <a href="https://github.com/Andrey1914" @click.prevent.stop="handleLinkClick">My GitHub Page</a>
             </div>
         </div>
     </div>
@@ -38,6 +39,14 @@ export default {
         imgSrc: {
             type: String,
             default: '',
+        }
+    },
+    methods: {
+        log() {
+            console.log('Cart is clicked')
+        },
+        handleLinkClick() {
+            console.log('GitHub link is clicked')
         }
     }
 }

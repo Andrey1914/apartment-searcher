@@ -2,7 +2,7 @@
   <ApartmentsList :items="apartments">
     <template v-slot:apartment="{ apartment }">
       <ApartmentsItem :key="apartment.id" :description="apartment.description" :rating="apartment.rating"
-        :imgSrc="apartment.imgUrl" :price="apartment.price" />
+        :imgSrc="apartment.imgUrl" :price="apartment.price" @click="handleItemClick" />
     </template>
   </ApartmentsList>
 </template>
@@ -22,8 +22,12 @@ export default {
     return {
       apartments,
     }
+  },
+  methods: {
+    handleItemClick() {
+      console.log('Item clicked');
+    }
   }
-
 }
 </script>
 

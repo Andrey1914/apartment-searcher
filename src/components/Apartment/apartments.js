@@ -170,175 +170,175 @@ export default [
       email: "Lenna12@gmail.com",
     },
   },
-  //   {
-  //     id: "5f689a2c09b16000e9a2f488",
-  //     title: "Aut excepturi sed reiciendis.",
-  //     imgUrl: "/img/apartments/apartment-11.jpg",
-  //     description:
-  //       "Accusantium tempora dolore autem. Nihil perferendis neque. Dignissimos est quidem quasi sit mollitia. Dolorem suscipit earum recusandae quam. Sunt atque vel dolorem. Quidem in temporibus.",
-  //     rating: 5,
-  //     price: 1555,
-  //     location: {
-  //       city: "Odesa",
-  //     },
-  //     owner: {
-  //       name: "Janie",
-  //       phone: "960-872-6654",
-  //       email: "Rowena.Beatty@yahoo.com",
-  //     },
-  //   },
-  //   {
-  //     id: "5f689a2c09b16000e9a2f487",
-  //     title: "Eligendi vel voluptates perspiciatis.",
-  //     imgUrl: "/img/apartments/apartment-12.jpg",
-  //     description:
-  //       "Quidem natus sunt. Sunt nobis repudiandae. Id reprehenderit accusantium quasi expedita.",
-  //     rating: 0,
-  //     price: 652,
-  //     location: {
-  //       city: "Dnipro",
-  //     },
-  //     owner: {
-  //       name: "Neil",
-  //       phone: "641-112-1767",
-  //       email: "Savanah_Kozey@gmail.com",
-  //     },
-  //   },
-  //   {
-  //     id: "5f689a2c09b16000e9a2f480",
-  //     title: "Quis nobis eius sint occaecati.",
-  //     imgUrl: "/img/apartments/apartment-13.jpg",
-  //     description:
-  //       "Exercitationem consequuntur expedita aut neque hic ut ratione. Nulla aut non inventore quod voluptas dolore quod. Doloribus ipsam hic.",
-  //     rating: 2,
-  //     price: 3530,
-  //     location: {
-  //       city: "Mariupol",
-  //     },
-  //     owner: {
-  //       name: "Tyrique",
-  //       phone: "359-552-9767",
-  //       email: "Brandi88@gmail.com",
-  //     },
-  //   },
-  //   {
-  //     id: "5f689a2c09b16000e9a2f479",
-  //     title: "Voluptatibus ea consectetur sed sed quas saepe quo.",
-  //     imgUrl: "/img/apartments/apartment-14.jpg",
-  //     description:
-  //       "Beatae quaerat esse voluptas laborum id quo perspiciatis. Id debitis totam veritatis nostrum sunt. Laboriosam quis dolorem. Repudiandae hic iure similique blanditiis expedita maiores dignissimos reprehenderit sed.",
-  //     rating: 1,
-  //     price: 3250,
-  //     location: {
-  //       city: "Kherson",
-  //     },
-  //     owner: {
-  //       name: "Sean",
-  //       phone: "605-185-0631",
-  //       email: "Emmanuel_Pollich5@gmail.com",
-  //     },
-  //   },
-  //   {
-  //     id: "5f689a2c09b16000e9a2f47a",
-  //     title: "Tempora laudantium quos sed.",
-  //     imgUrl: "/img/apartments/apartment-15.jpg",
-  //     description:
-  //       "Debitis aliquid laboriosam optio sequi magnam reiciendis facilis. Earum a id voluptas libero qui. Perspiciatis vero doloribus impedit vel quibusdam.",
-  //     rating: 1,
-  //     price: 3771,
-  //     location: {
-  //       city: "Odesa",
-  //     },
-  //     owner: {
-  //       name: "Janet",
-  //       phone: "382-460-0703",
-  //       email: "Makenna.Satterfield84@gmail.com",
-  //     },
-  //   },
-  //   {
-  //     id: "5f689a2c09b16000e9a2f482",
-  //     title: "Autem saepe est aperiam tempora.",
-  //     imgUrl: "/img/apartments/apartment-16.jpg",
-  //     description:
-  //       "Quaerat aut ipsam vel. Laudantium dignissimos repellat autem blanditiis velit quidem dignissimos accusantium commodi. Dolor praesentium laudantium voluptatem tempore. Corrupti facilis voluptates id saepe eos repudiandae mollitia. Voluptatem id assumenda sunt at minus.",
-  //     rating: 1,
-  //     price: 2249,
-  //     location: {
-  //       city: "Kyiv",
-  //     },
-  //     owner: {
-  //       name: "Noe",
-  //       phone: "551-479-3150",
-  //       email: "Jonas.Tromp@yahoo.com",
-  //     },
-  //   },
-  //   {
-  //     id: "5f689a2c09b16000e9a2f484",
-  //     title: "Qui omnis magni ad omnis neque.",
-  //     imgUrl: "/img/apartments/apartment-17.jpg",
-  //     description:
-  //       "Magni qui blanditiis doloribus mollitia laboriosam quibusdam provident. Et et minima quae commodi dicta vel omnis. Numquam nemo laborum ullam perspiciatis tempora.",
-  //     rating: 2,
-  //     price: 2324,
-  //     location: {
-  //       city: "Dnipro",
-  //     },
-  //     owner: {
-  //       name: "Aletha",
-  //       phone: "296-446-0921",
-  //       email: "Margarita.Durgan34@hotmail.com",
-  //     },
-  //   },
-  //   {
-  //     id: "5f689a2c09b16000e9a2f489",
-  //     title: "Possimus iste error harum eum sunt rerum perspiciatis nisi.",
-  //     imgUrl: "/img/apartments/apartment-18.jpg",
-  //     description:
-  //       "Odio accusantium dicta. Sit minus quo quo. Excepturi est deleniti enim voluptas quis rerum. Libero beatae consequatur. Error nostrum porro quo perspiciatis adipisci.",
-  //     rating: 5,
-  //     price: 605,
-  //     location: {
-  //       city: "Lviv",
-  //     },
-  //     owner: {
-  //       name: "Chasity",
-  //       phone: "738-307-1493",
-  //       email: "Godfrey.Cormier@gmail.com",
-  //     },
-  //   },
-  //   {
-  //     id: "5f689a2c09b16000e9a2f486",
-  //     title: "Saepe autem quam rerum similique enim rerum molestias.",
-  //     imgUrl: "/img/apartments/apartment-19.jpg",
-  //     description:
-  //       "Reprehenderit velit iusto fugiat possimus animi est rerum. Assumenda minus qui perspiciatis sint veniam culpa quod tempora in. Eligendi qui rerum optio nihil maxime ipsa quaerat voluptas. Quod possimus aut cum inventore quaerat quam. Voluptate ducimus unde ipsa. Id ducimus aut iusto porro.",
-  //     rating: 5,
-  //     price: 2330,
-  //     location: {
-  //       city: "Mariupol",
-  //     },
-  //     owner: {
-  //       name: "Bart",
-  //       phone: "922-384-9740",
-  //       email: "Chadd_Jacobs28@hotmail.com",
-  //     },
-  //   },
-  //   {
-  //     id: "5f689a2c09b16000e9a2f483",
-  //     title:
-  //       "Ipsum maxime molestiae harum voluptas beatae omnis neque consectetur.",
-  //     imgUrl: "/img/apartments/apartment-20.jpg",
-  //     description:
-  //       "Sit quo in commodi est ex dicta qui. Dolore minus ea sit voluptatem voluptas non rerum consectetur. Architecto maxime nulla. Et dolorem beatae quidem debitis. Odio ad id atque neque. Neque vero hic quibusdam consequatur perferendis dolor ut.",
-  //     rating: 3,
-  //     price: 1099,
-  //     location: {
-  //       city: "Lviv",
-  //     },
-  //     owner: {
-  //       name: "Helmer",
-  //       phone: "999-690-1616",
-  //       email: "Concepcion.Cummings32@yahoo.com",
-  //     },
-  //   },
+  {
+    id: "5f689a2c09b16000e9a2f488",
+    title: "Aut excepturi sed reiciendis.",
+    imgUrl: require("../../assets/images/apartments/image11.jpg"),
+    description:
+      "Accusantium tempora dolore autem. Nihil perferendis neque. Dignissimos est quidem quasi sit mollitia. Dolorem suscipit earum recusandae quam. Sunt atque vel dolorem. Quidem in temporibus.",
+    rating: 5,
+    price: 1555,
+    location: {
+      city: "Odesa",
+    },
+    owner: {
+      name: "Janie",
+      phone: "960-872-6654",
+      email: "Rowena.Beatty@yahoo.com",
+    },
+  },
+  {
+    id: "5f689a2c09b16000e9a2f487",
+    title: "Eligendi vel voluptates perspiciatis.",
+    imgUrl: require("../../assets/images/apartments/image12.jpg"),
+    description:
+      "Quidem natus sunt. Sunt nobis repudiandae. Id reprehenderit accusantium quasi expedita.",
+    rating: 0,
+    price: 652,
+    location: {
+      city: "Dnipro",
+    },
+    owner: {
+      name: "Neil",
+      phone: "641-112-1767",
+      email: "Savanah_Kozey@gmail.com",
+    },
+  },
+  {
+    id: "5f689a2c09b16000e9a2f480",
+    title: "Quis nobis eius sint occaecati.",
+    imgUrl: require("../../assets/images/apartments/image13.jpg"),
+    description:
+      "Exercitationem consequuntur expedita aut neque hic ut ratione. Nulla aut non inventore quod voluptas dolore quod. Doloribus ipsam hic.",
+    rating: 2,
+    price: 3530,
+    location: {
+      city: "Mariupol",
+    },
+    owner: {
+      name: "Tyrique",
+      phone: "359-552-9767",
+      email: "Brandi88@gmail.com",
+    },
+  },
+  {
+    id: "5f689a2c09b16000e9a2f479",
+    title: "Voluptatibus ea consectetur sed sed quas saepe quo.",
+    imgUrl: require("../../assets/images/apartments/image14.jpg"),
+    description:
+      "Beatae quaerat esse voluptas laborum id quo perspiciatis. Id debitis totam veritatis nostrum sunt. Laboriosam quis dolorem. Repudiandae hic iure similique blanditiis expedita maiores dignissimos reprehenderit sed.",
+    rating: 1,
+    price: 3250,
+    location: {
+      city: "Kherson",
+    },
+    owner: {
+      name: "Sean",
+      phone: "605-185-0631",
+      email: "Emmanuel_Pollich5@gmail.com",
+    },
+  },
+  {
+    id: "5f689a2c09b16000e9a2f47a",
+    title: "Tempora laudantium quos sed.",
+    imgUrl: require("../../assets/images/apartments/image15.jpg"),
+    description:
+      "Debitis aliquid laboriosam optio sequi magnam reiciendis facilis. Earum a id voluptas libero qui. Perspiciatis vero doloribus impedit vel quibusdam.",
+    rating: 1,
+    price: 3771,
+    location: {
+      city: "Odesa",
+    },
+    owner: {
+      name: "Janet",
+      phone: "382-460-0703",
+      email: "Makenna.Satterfield84@gmail.com",
+    },
+  },
+  {
+    id: "5f689a2c09b16000e9a2f482",
+    title: "Autem saepe est aperiam tempora.",
+    imgUrl: require("../../assets/images/apartments/image16.jpg"),
+    description:
+      "Quaerat aut ipsam vel. Laudantium dignissimos repellat autem blanditiis velit quidem dignissimos accusantium commodi. Dolor praesentium laudantium voluptatem tempore. Corrupti facilis voluptates id saepe eos repudiandae mollitia. Voluptatem id assumenda sunt at minus.",
+    rating: 1,
+    price: 2249,
+    location: {
+      city: "Kyiv",
+    },
+    owner: {
+      name: "Noe",
+      phone: "551-479-3150",
+      email: "Jonas.Tromp@yahoo.com",
+    },
+  },
+  {
+    id: "5f689a2c09b16000e9a2f484",
+    title: "Qui omnis magni ad omnis neque.",
+    imgUrl: require("../../assets/images/apartments/image17.jpg"),
+    description:
+      "Magni qui blanditiis doloribus mollitia laboriosam quibusdam provident. Et et minima quae commodi dicta vel omnis. Numquam nemo laborum ullam perspiciatis tempora.",
+    rating: 2,
+    price: 2324,
+    location: {
+      city: "Dnipro",
+    },
+    owner: {
+      name: "Aletha",
+      phone: "296-446-0921",
+      email: "Margarita.Durgan34@hotmail.com",
+    },
+  },
+  {
+    id: "5f689a2c09b16000e9a2f489",
+    title: "Possimus iste error harum eum sunt rerum perspiciatis nisi.",
+    imgUrl: require("../../assets/images/apartments/image18.jpg"),
+    description:
+      "Odio accusantium dicta. Sit minus quo quo. Excepturi est deleniti enim voluptas quis rerum. Libero beatae consequatur. Error nostrum porro quo perspiciatis adipisci.",
+    rating: 5,
+    price: 605,
+    location: {
+      city: "Lviv",
+    },
+    owner: {
+      name: "Chasity",
+      phone: "738-307-1493",
+      email: "Godfrey.Cormier@gmail.com",
+    },
+  },
+  {
+    id: "5f689a2c09b16000e9a2f486",
+    title: "Saepe autem quam rerum similique enim rerum molestias.",
+    imgUrl: require("../../assets/images/apartments/image19.jpg"),
+    description:
+      "Reprehenderit velit iusto fugiat possimus animi est rerum. Assumenda minus qui perspiciatis sint veniam culpa quod tempora in. Eligendi qui rerum optio nihil maxime ipsa quaerat voluptas. Quod possimus aut cum inventore quaerat quam. Voluptate ducimus unde ipsa. Id ducimus aut iusto porro.",
+    rating: 5,
+    price: 2330,
+    location: {
+      city: "Mariupol",
+    },
+    owner: {
+      name: "Bart",
+      phone: "922-384-9740",
+      email: "Chadd_Jacobs28@hotmail.com",
+    },
+  },
+  {
+    id: "5f689a2c09b16000e9a2f483",
+    title:
+      "Ipsum maxime molestiae harum voluptas beatae omnis neque consectetur.",
+    imgUrl: require("../../assets/images/apartments/image20.jpg"),
+    description:
+      "Sit quo in commodi est ex dicta qui. Dolore minus ea sit voluptatem voluptas non rerum consectetur. Architecto maxime nulla. Et dolorem beatae quidem debitis. Odio ad id atque neque. Neque vero hic quibusdam consequatur perferendis dolor ut.",
+    rating: 3,
+    price: 1099,
+    location: {
+      city: "Lviv",
+    },
+    owner: {
+      name: "Helmer",
+      phone: "999-690-1616",
+      email: "Concepcion.Cummings32@yahoo.com",
+    },
+  },
 ];
