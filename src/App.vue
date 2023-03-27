@@ -1,4 +1,6 @@
 <template>
+  <h2>{{ text }}</h2>
+  <CustomInput v-model="text" />
   <ApartmentsList :items="apartments">
     <template v-slot:apartment="{ apartment }">
       <ApartmentsItem :key="apartment.id" :description="apartment.description" :rating="apartment.rating"
@@ -10,16 +12,19 @@
 <script>
 import ApartmentsList from './components/Apartment/ApartmentsList.vue';
 import ApartmentsItem from './components/Apartment/ApartmentsItem.vue';
+import CustomInput from './components/Shared/CustomInput.vue';
 import apartments from './components/Apartment/apartments';
 
 export default {
   name: 'App',
   components: {
     ApartmentsList,
-    ApartmentsItem
+    ApartmentsItem,
+    CustomInput,
   },
   data() {
     return {
+      text: '',
       apartments,
     }
   },
