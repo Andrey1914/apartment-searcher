@@ -23,10 +23,17 @@ export default {
 
 .custom-input {
     min-height: 40px;
+    max-width: 220px;
+    width: 100%;
     padding: 8px 15px;
     outline: none;
     line-height: inherit;
     font-size: 18px;
     border: 2px solid $main-color;
+
+    &::placeholder {
+        font-family: 'Montserrat';
+        color: inherit;
+    }
 }
 </style>

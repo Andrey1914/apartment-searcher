@@ -1,10 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <div class="container__btn">
-        <button v-on="listeners" v-bind:type="type" :class="{ btn: true, 'btn--outlined': outlined }">
-            <slot></slot>
-        </button>
-    </div>
+    <button v-on="listeners" v-bind:type="type" :class="{ btn: true, 'btn--outlined': outlined }">
+        <slot></slot>
+    </button>
 </template>
 
 <script>
@@ -13,7 +11,7 @@
 
 
 export default {
-    name: "AppButton",
+    name: "SubmitButton",
     props: {
         type: {
             type: String,
@@ -28,10 +26,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container__btn {
-    margin-bottom: 12px;
-}
-
 .btn {
     font-family: 'Montserrat';
     font-size: 18px;

@@ -1,7 +1,11 @@
 <template>
   <h2>{{ text }}</h2>
-  <CustomSelect :items="['name', 'label', 'salary']" />
-  <CustomInput v-model="text" />
+  <!-- <CustomSelect :items="['name', 'label', 'salary']" /> -->
+  <!-- <CustomInput v-model="text" /> -->
+  <Container>
+    <ApartmentsFilterForm class="apartments-filter" @submit="logger" />
+  </Container>
+
   <ApartmentsList :items="apartments">
     <template v-slot:apartment="{ apartment }">
       <ApartmentsItem :key="apartment.id" :description="apartment.description" :rating="apartment.rating"
@@ -13,17 +17,19 @@
 <script>
 import ApartmentsList from './components/Apartment/ApartmentsList.vue';
 import ApartmentsItem from './components/Apartment/ApartmentsItem.vue';
-import CustomInput from './components/Shared/CustomInput.vue';
+import ApartmentsFilterForm from './components/Apartment/ApartmentsFilterForm.vue';
+// import CustomInput from './components/Shared/CustomInput.vue';
+// import CustomSelect from './components/Shared/CustomSelect.vue';
 import apartments from './components/Apartment/apartments';
-import CustomSelect from './components/Shared/CustomSelect.vue';
+import Container from './components/Shared/Container.vue';
 
 export default {
   name: 'App',
   components: {
     ApartmentsList,
     ApartmentsItem,
-    CustomInput,
-    CustomSelect
+    ApartmentsFilterForm,
+    Container
   },
   data() {
     return {
@@ -32,9 +38,10 @@ export default {
     }
   },
   methods: {
-    handleItemClick() {
-      console.log('Item clicked');
-    }
+    logger(value) {
+      console.log(value, '--form value--');
+    },
+
   }
 }
 </script>
@@ -47,5 +54,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.apartments-filter {
+  margin-bottom: 40px;
 }
 </style>
