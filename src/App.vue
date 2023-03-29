@@ -18,13 +18,13 @@
 </template>
 
 <script>
-import AppHeader from './components/Shared/Header.vue'
+import AppHeader from './components/Header.vue'
 import ApartmentsList from './components/Apartment/ApartmentsList.vue';
 import ApartmentsItem from './components/Apartment/ApartmentsItem.vue';
 import ApartmentsFilterForm from './components/Apartment/ApartmentsFilterForm.vue';
 import apartments from './components/Apartment/apartments';
 import Container from './components/Shared/Container.vue';
-import AppFooter from './components/Shared/Footer.vue';
+import AppFooter from './components/Footer.vue';
 
 export default {
   name: 'App',
