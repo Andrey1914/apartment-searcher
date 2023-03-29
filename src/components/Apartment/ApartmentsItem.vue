@@ -8,7 +8,7 @@
                     <StarRating :rating="rating" />
                 </div>
                 <div class="apartment-item__price">UAH {{ price }}</div>
-                <a href="https://github.com/Andrey1914" @click.prevent.stop="handleLinkClick">My GitHub Page</a>
+                <router-link :to="{ name: 'apartment' }" class="apartment-item__link"></router-link>
             </div>
         </div>
     </div>
@@ -102,6 +102,14 @@ export default {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
 }
