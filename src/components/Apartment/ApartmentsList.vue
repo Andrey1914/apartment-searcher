@@ -31,5 +31,6 @@ export default {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 30px 0;
 }
 </style>
