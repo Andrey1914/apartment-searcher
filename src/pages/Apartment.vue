@@ -3,7 +3,10 @@
         <Container>
             <div class="apartment-page__content">
                 <ApartmentsMainInfo :apartment="apartment" />
-                <ApartmentsOwner class="apartment-page__owner" :owner="apartment.owner" />
+                <div class="apartment-page__additional-info">
+                    <ApartmentsOwner class="apartment-page__owner" :owner="apartment.owner" />
+                    <Reviews :reviews="reviewsList" />
+                </div>
             </div>
         </Container>
     </main>
@@ -14,14 +17,20 @@ import Container from '@/components/Shared/Container.vue';
 import apartments from '@/components/Apartment/apartments';
 import ApartmentsMainInfo from '@/components/Apartment/ApartmentsMainInfo.vue';
 import ApartmentsOwner from '@/components/Apartment/ApartmentsOwner.vue';
+import Reviews from '../components/reviews';
+import reviewsList from '../components/reviews/reviews';
 export default {
     name: 'ApartmentPage',
     components: {
         Container,
         ApartmentsMainInfo,
-        ApartmentsOwner
+        ApartmentsOwner,
+        Reviews,
     },
     computed: {
+        reviews() {
+            return reviewsList;
+        },
         apartment() {
             return apartments.find(apartment => apartment.id === this.$route.params.id)
         }
