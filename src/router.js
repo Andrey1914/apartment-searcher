@@ -4,6 +4,7 @@ import Foo from "./pages/Foo.vue";
 import Bar from "./pages/Bar.vue";
 import Apartment from "./pages/Apartment.vue";
 import HomePage from "./pages/HomePage.vue";
+import ErrorPage from "./pages/ErrorPage.vue";
 
 const routes = [
   {
@@ -15,14 +16,19 @@ const routes = [
     component: Bar,
   },
   {
-    path: "/item",
+    path: "/",
+    component: HomePage,
+    name: "home-page",
+  },
+  {
+    path: "/apartments/:id",
     component: Apartment,
     name: "apartment",
   },
   {
-    path: "/",
-    component: HomePage,
-    name: "homepage",
+    path: "/*",
+    component: ErrorPage,
+    name: "error-page",
   },
 ];
 
