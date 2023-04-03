@@ -18,7 +18,7 @@ import apartments from '@/components/Apartment/apartments';
 import ApartmentsMainInfo from '@/components/Apartment/ApartmentsMainInfo.vue';
 import ApartmentsOwner from '@/components/Apartment/ApartmentsOwner.vue';
 import Reviews from '../components/reviews';
-import reviewsList from '../components/reviews/reviews';
+import reviewsList from '../components/reviews/reviews.json';
 export default {
     name: 'ApartmentPage',
     components: {
@@ -28,16 +28,16 @@ export default {
         Reviews,
     },
     computed: {
-        reviews() {
+        reviewsList() {
             return reviewsList;
         },
         apartment() {
-            return apartments.find(apartment => apartment.id === this.$route.params.id)
+            return apartments.find((apartment) => apartment.id === this.$route.params.id)
         }
     },
-    mounted() {
-        console.log(this.apartment)
-    }
+    // mounted() {
+    //     console.log(this.apartment)
+    // }
 }
 </script>
 

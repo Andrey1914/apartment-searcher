@@ -1,6 +1,6 @@
 <template>
     <div class="reviews-heading">
-        <Avatar />
+        <Avatar class="reviews-heading__avatar" />
         <div class="reviews-heading__content">
             <span class="reviews-heading__author">{{ author }}</span>
             <Rating :rating="rating" />
