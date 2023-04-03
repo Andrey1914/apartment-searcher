@@ -3,7 +3,7 @@
         <div class="reviews__heading">
             <h2 class="reviews__title">Overall rating</h2>
             <div class="reviews__rating">
-                <span>{{ amountOfReviews }} Feedback(s)</span>
+                <span>{{ amountOfReviews }} review(s)</span>
                 <Rating :rating="0" />
             </div>
         </div>
@@ -48,7 +48,7 @@ export default {
         },
         buttonText() {
             return this.reviewsLimit === this.reviews.length
-                ? 'Minimize'
+                ? 'Minimize.'
                 : 'Read more...'
         },
     },

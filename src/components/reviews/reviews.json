@@ -18,5 +18,15 @@
     "author": "John",
     "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore velit reiciendis modi magnam, aliquid architecto cumque saepe recusandae est optio accusamus ducimus itaque assumenda eius culpa earum. Aspernatur, molestiae dicta!",
     "rating": 2.8
+  },
+  {
+    "author": "Oliver",
+    "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore velit reiciendis modi magnam, aliquid architecto cumque saepe recusandae est optio accusamus ducimus itaque assumenda eius culpa earum. Aspernatur, molestiae dicta!",
+    "rating": 4.2
+  },
+  {
+    "author": "Kelly",
+    "content": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore velit reiciendis modi magnam, aliquid architecto cumque saepe recusandae est optio accusamus ducimus itaque assumenda eius culpa earum. Aspernatur, molestiae dicta!",
+    "rating": 4.4
   }
 ]
