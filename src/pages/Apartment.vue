@@ -27,17 +27,17 @@ export default {
         ApartmentsOwner,
         Reviews,
     },
+
     computed: {
         reviewsList() {
-            return reviewsList;
+            return reviewsList
         },
         apartment() {
-            return apartments.find((apartment) => apartment.id === this.$route.params.id)
-        }
+            return apartments.find(
+                (apartment) => apartment.id === this.$route.params.id
+            )
+        },
     },
-    // mounted() {
-    //     console.log(this.apartment)
-    // }
 }
 </script>
 
