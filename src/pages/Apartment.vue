@@ -38,6 +38,30 @@ export default {
             )
         },
     },
+
+    beforeCreate() {
+        console.log(this.reviewsList, '--beforeCreate--');
+    },
+
+    created() {
+        console.log(this.reviewsList, '--created--');
+    },
+
+    beforeMount() {
+        console.log(this.$el, '--beforeMount--');
+    },
+
+    mounted() {
+        console.log(this.$el, '--mount--');
+    },
+
+    beforeUnmount() {
+        console.log(this.$el, '--beforeUnmount--');
+    },
+
+    unmounted() {
+        console.log(this.$el, '--unmounted--');
+    },
 }
 </script>
 
