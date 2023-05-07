@@ -21,7 +21,7 @@ import ApartmentsFilterForm from '@/components/Apartment/ApartmentsFilterForm.vu
 import ApartmentsItem from '@/components/Apartment/ApartmentsItem.vue';
 import ApartmentsList from '@/components/Apartment/ApartmentsList.vue';
 import Container from '@/components/Shared/Container.vue';
-// import apartments from '@/components/Apartment/apartments';
+import apartments from '@/components/Apartment/apartments';
 import { getApartmentsList } from '@/services/apartment.service';
 
 
@@ -31,7 +31,8 @@ export default {
     data() {
         return {
             text: '',
-            apartments: [],
+            // apartments: [],
+            apartments,
             filters: {
                 city: '',
                 price: 0,
