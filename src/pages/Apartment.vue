@@ -1,6 +1,6 @@
 <template>
     <main class="apartment-page">
-        <Container>
+        <Container v-if="apartment">
             <div class="apartment-page__content">
                 <ApartmentsMainInfo :apartment="apartment" />
                 <div class="apartment-page__additional-info">
@@ -14,11 +14,12 @@
 
 <script>
 import Container from '@/components/Shared/Container.vue';
-import apartments from '@/components/Apartment/apartments';
+// import apartments from '@/components/Apartment/apartments';
 import ApartmentsMainInfo from '@/components/Apartment/ApartmentsMainInfo.vue';
 import ApartmentsOwner from '@/components/Apartment/ApartmentsOwner.vue';
 import Reviews from '../components/reviews';
 import reviewsList from '../components/reviews/reviews.json';
+import { getApartmentById } from '@/services/apartment.service';
 
 export default {
     name: 'ApartmentPage',
@@ -28,25 +29,38 @@ export default {
         ApartmentsOwner,
         Reviews,
     },
-
+    data() {
+        return {
+            apartment: null
+        }
+    },
     computed: {
         reviewsList() {
             return reviewsList
         },
-        apartment() {
-            return apartments.find(
-                (apartment) => apartment.id === this.$route.params.id
-            )
-        },
+        // apartment() {
+        //     return apartments.find(
+        //         (apartment) => apartment.id === this.$route.params.id
+        //     )
+        // },
+    },
+    async created() {
+        try {
+            const { id } = this.$route.params;
+            const { data } = await getApartmentById(id);
+            this.apartment = data;
+        } catch (error) {
+            console.error(error)
+        }
     },
 
     beforeCreate() {
         console.log(this.reviewsList, '--beforeCreate--');
     },
 
-    created() {
-        console.log(this.reviewsList, '--created--');
-    },
+    // created() {
+    //     console.log(this.reviewsList, '--created--');
+    // },
 
     beforeMount() {
         console.log(this.$el, '--beforeMount--');
