@@ -44,6 +44,6 @@ export default {
     line-height: inherit;
     font-size: 18px;
     cursor: pointer;
-    border: 2px solid $main-color;
+    border: 2px solid $main;
 }
 </style>

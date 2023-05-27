@@ -28,7 +28,7 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    background: $secondary-color;
+    background: $secondary;
     /* height: 30px; */
     padding: 16px 0;
 }

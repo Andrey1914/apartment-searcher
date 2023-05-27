@@ -19,25 +19,24 @@ export default {
 @import "../assets/scss/variables.scss";
 
 .footer {
-    background: $secondary-color;
+    background: $secondary;
     /* height: 30px; */
     padding: 15px 0;
+    color: $copyright;
 
     &__text {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
     }
 
     &__link {
-        color: #fff;
         text-decoration: none;
     }
 
     &__svg {
         margin-left: 5px;
-        color: #fff;
+        color: $icon;
     }
 }
 </style>
