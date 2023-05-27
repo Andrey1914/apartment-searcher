@@ -17,7 +17,6 @@ import CustomInput from '../Shared/CustomInput.vue';
 import SubmitButton from '../Shared/Button.vue';
 import { isRequired, charLimit } from '../../utils/validationRules';
 
-
 export default {
     components: {
         CustomSelect,

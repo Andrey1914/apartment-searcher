@@ -87,11 +87,17 @@ export default {
     &__content {
         display: flex;
         align-items: flex-start;
+        gap: 30px;
+    }
+
+    &__additional-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
     &__owner {
         min-width: 350px;
-        margin-left: 30px;
     }
 }
 </style>

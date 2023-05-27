@@ -1,22 +1,33 @@
 <template>
     <div class="apartment-item" @click="$emit('click')">
+
         <div class="apartment-item__inner">
+
             <img :src="imgSrc" alt="" class="apartment-item__photo" />
+
             <div class="apartment-item__container">
+
                 <p class="apartment-item__description">{{ descr }}</p>
+
                 <div class="apartment-item__rating">
+
                     <StarRating :rating="rating" />
+
                 </div>
+
                 <div class="apartment-item__price">UAH {{ price }}</div>
+
                 <router-link :to="{ name: 'apartment', params: { id }, query: { name: 'name' } }"
                     class="apartment-item__link"></router-link>
+
             </div>
+
         </div>
+
     </div>
 </template>
 
 <script>
-
 import StarRating from '../StarRating.vue';
 
 export default {
@@ -58,10 +69,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/scss/variables.scss';
+
 .apartment-item {
     position: relative;
     width: calc(100% / 3 - 20px);
-
 
     &__inner {
         position: relative;
@@ -72,9 +84,9 @@ export default {
         padding: 20px;
         opacity: 0;
         transition: opacity 0.4s;
-        background: rgba(#0f1d2d, 0.7);
+        background: $overlay;
         min-height: 200px;
-        color: #fff;
+        color: $overlay-text;
         text-align: left;
         line-height: 1.4;
         cursor: pointer;
@@ -116,6 +128,4 @@ export default {
         width: 100%;
         height: 100%;
     }
-
-}
-</style>
+}</style>

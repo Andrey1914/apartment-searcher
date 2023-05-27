@@ -82,6 +82,7 @@ export default {
     max-width: 220px;
     width: 100%;
     border: 2px solid $main;
+    font-family: 'Montserrat';
     font-size: 18px;
     outline: none;
     line-height: inherit;

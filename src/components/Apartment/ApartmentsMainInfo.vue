@@ -1,17 +1,22 @@
 <template>
     <article class="apartment-main-info">
+
         <div class="apartment-main-info__heading">
+
             <h1 class="apartment-main-info__title">{{ apartment.title }}</h1>
+
             <StarRating :rating="apartment.rating" />
+
         </div>
+
         <img :src="apartment.imgUrl" alt="" class="apartment-main-info__photo">
+
         <p class="apartment-main-info__description">{{ apartment.descr }}</p>
 
     </article>
 </template>
 
 <script>
-
 import StarRating from '../StarRating.vue';
 export default {
     name: 'ApartmentsMainInfo',
@@ -31,7 +36,6 @@ export default {
 .apartment-main-info {
     &__heading {
         display: flex;
-
     }
 
     &__title {
@@ -50,5 +54,4 @@ export default {
         line-height: 1.3;
         margin-top: 30px;
     }
-}
-</style>
+}</style>
