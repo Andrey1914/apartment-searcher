@@ -19,6 +19,7 @@ import ApartmentsMainInfo from '@/components/Apartment/ApartmentsMainInfo.vue';
 import ApartmentsOwner from '@/components/Apartment/ApartmentsOwner.vue';
 import Reviews from '../components/reviews';
 import reviewsList from '../components/reviews/reviews.json';
+
 export default {
     name: 'ApartmentPage',
     components: {
