@@ -5,13 +5,13 @@
         </Container>
         <Container>
             <p v-if="!filteredApartments.length">Nothing found</p>
-            <ApartmentsList :items="apartments">
+            <ApartmentsList v-else :items="filteredApartments">
                 <template v-slot:apartment="{ apartment }">
-                    <ApartmentsItem :key="apartment.id" :id="apartment.id" :description="apartment.description"
-                        :rating="apartment.rating" :imgSrc="apartment.imgUrl" :price="apartment.price"
-                        @click="handleItemClick" />
+                    <ApartmentsItem :key="apartment.id" :id="apartment.id" :descr="apartment.descr"
+                        :rating="apartment.rating" :imgSrc="apartment.imgUrl" :price="apartment.price" />
                 </template>
             </ApartmentsList>
+
         </Container>
     </main>
 </template>
@@ -21,24 +21,24 @@ import ApartmentsFilterForm from '@/components/Apartment/ApartmentsFilterForm.vu
 import ApartmentsItem from '@/components/Apartment/ApartmentsItem.vue';
 import ApartmentsList from '@/components/Apartment/ApartmentsList.vue';
 import Container from '@/components/Shared/Container.vue';
-import apartments from '@/components/Apartment/apartments';
+// import apartments from '@/components/Apartment/apartments';
 import { getApartmentsList } from '@/services/apartment.service';
-
 
 export default {
     name: 'App',
-    components: { Container, ApartmentsFilterForm, ApartmentsList, ApartmentsItem },
+    components: { Container, ApartmentsFilterForm, ApartmentsList, ApartmentsItem, },
     data() {
         return {
             text: '',
-            // apartments: [],
-            apartments,
+            apartments: [],
+            // apartments,
             filters: {
                 city: '',
                 price: 0,
             },
         }
     },
+
     computed: {
         filteredApartments() {
             return this.filterByCityName(this.filterByPrice(this.apartments))
@@ -71,6 +71,10 @@ export default {
                 return apartment.price >= this.filters.price
             })
         },
+        log() {
+            console.log(this.apartments);
+        }
+
     },
 }
 </script>

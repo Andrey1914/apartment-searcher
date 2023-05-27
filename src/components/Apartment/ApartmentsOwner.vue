@@ -8,6 +8,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'ApartmentsOwner',
     props: {
@@ -15,7 +16,8 @@ export default {
             type: Object,
             required: true
         }
-    }
+    },
+
 }
 </script>
 

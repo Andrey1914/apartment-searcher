@@ -3,12 +3,12 @@
         <div class="apartment-item__inner">
             <img :src="imgSrc" alt="" class="apartment-item__photo" />
             <div class="apartment-item__container">
-                <p class="apartment-item__description">{{ description }}</p>
+                <p class="apartment-item__description">{{ descr }}</p>
                 <div class="apartment-item__rating">
                     <StarRating :rating="rating" />
                 </div>
                 <div class="apartment-item__price">UAH {{ price }}</div>
-                <router-link :to="{ name: 'apartment', params: { id }, query: { name: 'John' } }"
+                <router-link :to="{ name: 'apartment', params: { id }, query: { name: 'name' } }"
                     class="apartment-item__link"></router-link>
             </div>
         </div>
@@ -18,7 +18,6 @@
 <script>
 
 import StarRating from '../StarRating.vue';
-
 
 export default {
     name: 'ApartmentsItem',
@@ -30,7 +29,7 @@ export default {
             type: String,
             required: true
         },
-        description: {
+        descr: {
             type: String,
             default: '',
         },
@@ -53,7 +52,7 @@ export default {
         },
         handleLinkClick() {
             console.log('GitHub link is clicked')
-        }
+        },
     }
 }
 </script>
