@@ -1,18 +1,21 @@
 <template>
     <main class="apartment-page">
-        <Container v-if="apartment">
-            <div class="apartment-page__content">
-                <ApartmentsMainInfo :apartment="apartment" />
-                <div class="apartment-page__additional-info">
-                    <ApartmentsOwner class="apartment-page__owner" :owner="apartment.owner" />
-                    <Reviews :reviews="reviewsList" />
+        <SectionWithHeaderSpacer>
+            <Container v-if="apartment">
+                <div class="apartment-page__content">
+                    <ApartmentsMainInfo :apartment="apartment" />
+                    <div class="apartment-page__additional-info">
+                        <ApartmentsOwner class="apartment-page__owner" :owner="apartment.owner" />
+                        <Reviews :reviews="reviewsList" />
+                    </div>
                 </div>
-            </div>
-        </Container>
+            </Container>
+        </SectionWithHeaderSpacer>
     </main>
 </template>
 
 <script>
+import SectionWithHeaderSpacer from '@/components/Shared/SectionWithHeaderSpacer.vue';
 import Container from '@/components/Shared/Container.vue';
 // import apartments from '@/components/Apartment/apartments';
 import ApartmentsMainInfo from '@/components/Apartment/ApartmentsMainInfo.vue';
@@ -28,6 +31,7 @@ export default {
         ApartmentsMainInfo,
         ApartmentsOwner,
         Reviews,
+        SectionWithHeaderSpacer
     },
     data() {
         return {

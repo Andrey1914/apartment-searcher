@@ -31,5 +31,6 @@ export default {
     background: $secondary;
     /* height: 30px; */
     padding: 16px 0;
+    z-index: 100;
 }
 </style>

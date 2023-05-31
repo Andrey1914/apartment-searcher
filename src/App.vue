@@ -32,7 +32,7 @@ export default {
 
 .content {
   flex-grow: 1;
-  padding-top: 120px;
+  /* padding-top: 120px; */
 }
 
 /* .apartments-filter {

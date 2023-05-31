@@ -1,8 +1,34 @@
 $main: #ff662d;
 $secondary: #0f1d2d;
+$bg-modal: #fff;
 $card-bg: #e1efff;
 $error: red;
 $copyright: #fff;
 $icon: #fff;
 $overlay: rgba(#0f1d2d, 0.7);
 $overlay-text: #fff;
+$backdrop: rgba(15, 29, 45, 0.5);
+
+@mixin light-theme {
+  $main: #ff662d;
+  $secondary: #0f1d2d;
+  $card-bg: #e1efff;
+  $error: red;
+  $copyright: #fff;
+  $icon: #fff;
+  $overlay: rgba(#0f1d2d, 0.7);
+  $overlay-text: #fff;
+  $bg: #fff;
+}
+
+@mixin dark-theme {
+  $main: #ff662d;
+  $secondary: #0f1d2d;
+  $card-bg: #e1efff;
+  $error: red;
+  $copyright: #fff;
+  $icon: #fff;
+  $overlay: rgba(#0f1d2d, 0.7);
+  $overlay-text: #fff;
+  $bg: rgb(54, 54, 54);
+}
