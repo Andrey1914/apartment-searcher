@@ -1,7 +1,8 @@
 <template>
     <div class="wrapper-input">
 
-        <input @input="inputHandler" v-bind="$attrs" class="custom-input" :class="!isValid && 'custom-input--error'" />
+        <input @input="inputHandler" v-on="listeners" v-bind="$attrs" class="custom-input"
+            :class="!isValid && 'custom-input--error'" />
 
         <span v-if="!isValid" class="custom-input__error">{{ error }}</span>
 
@@ -37,14 +38,14 @@ export default {
             default: () => [],
         },
     },
-    // computed: {
-    //     listeners() {
-    //         return {
-    //             ...this.listeners,
-    //             input: (event) => this.$emit('input', event.target.value),
-    //         };
-    //     },
-    // },
+    computed: {
+        listeners() {
+            return {
+                ...this.listeners,
+                input: (event) => this.$emit('input', event.target.value),
+            };
+        },
+    },
     watch: {
         value(value) {
             this.validate(value);
@@ -91,12 +92,11 @@ export default {
 
 .wrapper-input {
     position: relative;
-    display: inline-flex;
+    margin-bottom: 20px;
 }
 
 .custom-input {
     height: 40px;
-    max-width: 220px;
     width: 100%;
     border: 2px solid $main;
     font-family: 'Montserrat';

@@ -1,6 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <button v-on="listeners" v-bind:type="type" :class="{ btn: true, 'btn--outlined': outlined }">
+    <!-- <button v-on="listeners" v-bind:type="type" :class="{ btn: true, 'btn--outlined': outlined }"> -->
+    <button v-bind:type="type" :class="{ btn: true, 'btn--outlined': outlined }">
         <slot></slot>
     </button>
 </template>

@@ -6,6 +6,7 @@ import Apartment from "./pages/Apartment.vue";
 import HomePage from "./pages/HomePage.vue";
 import ErrorPage from "./pages/ErrorPage.vue";
 import LoginPage from "./pages/Login.vue";
+import RegistrationPage from "./pages/Registration.vue";
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     path: "/apartments/:id",
     component: Apartment,
     name: "apartment",
+  },
+  {
+    path: "/registration",
+    component: RegistrationPage,
+    name: "registration-page",
   },
   {
     path: "/login",
