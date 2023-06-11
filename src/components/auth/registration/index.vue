@@ -45,6 +45,7 @@ export default {
             },
         };
     },
+
     computed: {
         rules() {
             return {
@@ -72,24 +73,45 @@ export default {
         },
     },
     methods: {
-
         async handleSubmit() {
             // const { form } = this.$refs;
-            // const isFormValid = form.validate();
+            const form = this.$refs.form;
+            const isFormValid = await form.validate();
             const { name, password, email } = this.formData;
             console.log(this.formData);
-            // if (isFormValid) {
-            try {
-                const { data } = await registerUser({ name, password, email });
-                console.log(data);
-                // form.reset();
-            } catch (error) {
-                console.log(error);
+            console.log(isFormValid)
+            if (isFormValid) {
+                try {
 
+                    // this.formData.name = name;
+                    // this.formData.password = password;
+                    // this.formData.email = email;
+
+                    const { data } = await registerUser({ name, password, email });
+                    console.log(data);
+                    // form.reset();
+                } catch (error) {
+                    console.log(error);
+                }
             }
-
-            // }
         },
+        // async handleSubmit() {
+        //     const { form } = this.$refs;
+        //     const isFormValid = form.validate();
+        //     const { name, password, email } = this.formData;
+        //     console.log(this.formData);
+        //     if (isFormValid) {
+        //         try {
+        //             const { data } = await registerUser({ name, password, email });
+        //             console.log(data);
+        //             form.reset();
+        //         } catch (error) {
+        //             console.log(error);
+
+        //         }
+
+        //     }
+        // },
 
     },
 }

@@ -14,7 +14,7 @@ export const emailValidation = (value) => ({
 });
 
 export const passwordValidation = (value) => ({
-  // hasPassed: /^(?=.*[A-Za-z])(?=.*[\d])[a-zA-Z0-9]{7,256}$/.test(value),
-  hasPassed: /^(?=.*[A-Za-z])(?=.*[\d]).{7,256}$/.test(value),
+  hasPassed: /^(?=.*[A-Za-z])(?=.*[\d])[a-zA-Z0-9]{7,256}$/.test(value),
+  // hasPassed: /^(?=.*[A-Za-z])(?=.*[\d]).{7,256}$/.test(value),
   message: "Password must contain one number and one character.",
 });
