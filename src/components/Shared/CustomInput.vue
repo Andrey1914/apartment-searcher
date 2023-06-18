@@ -1,20 +1,10 @@
 <template>
     <div class="wrapper-input">
-
-        <input @input="inputHandler" v-on="listeners" v-bind="$attrs" class="custom-input"
+        <input :value="modelValue" @input="changeValue" v-bind="$attrs" class="custom-input"
             :class="!isValid && 'custom-input--error'" />
-
         <span v-if="!isValid" class="custom-input__error">{{ error }}</span>
-
     </div>
 </template>
-<!-- <template>
-    <div class="wrapper-input">
-        <input v-on="listeners" v-bind="$attrs" @blur="blurHandler" :value="value" class="custom-input"
-            :class="!isValid && 'custom-input--error'" />
-        <span v-if="!isValid" class="custom-input__error">{{ error }}</span>
-    </div>
-</template> -->
 
 <script>
 export default {
@@ -23,7 +13,6 @@ export default {
         return {
             isValid: true,
             error: '',
-            isFirstInput: true,
         };
     },
     inject: {
@@ -33,10 +22,11 @@ export default {
     },
     inheritAttrs: false,
     props: {
-        value: {
+        modelValue: {
             type: String,
             default: '',
         },
+
         errorMessage: {
             type: String,
             default: '',
@@ -46,27 +36,13 @@ export default {
             default: () => [],
         },
     },
-    computed: {
-        listeners() {
-            return {
-                ...this.listeners,
-                input: (event) => this.$emit('input', event.target.value),
-            };
-        },
-    },
+    emits: ['update:modelValue'],
     watch: {
         value(value) {
             this.validate(value);
             console.log(value);
         },
     },
-    // watch: {
-    //     value() {
-    //         if (this.isFirstInput) return;
-
-    //         this.validate();
-    //     },
-    // },
     mounted() {
         if (!this.form) return;
 
@@ -78,11 +54,12 @@ export default {
         this.form.unRegisterInput(this);
     },
     methods: {
-        inputHandler(event) {
-            const value = event.target.value;
-            this.$emit('input', value);
-            this.validate(value);
+        changeValue(event) {
+            const modelValue = event.target.value;
+            this.$emit('update:modelValue', event.target.value)
+            this.validate(modelValue);
         },
+
         validate(value) {
             this.isValid = this.rules.every((rule) => {
                 const { hasPassed, message } = rule(value);
@@ -95,33 +72,8 @@ export default {
             });
         },
         reset() {
-            this.$emit('input', '')
+            this.$emit('update:modelValue', '')
         }
-        // validate() {
-        //     this.isValid = this.rules.every((rule) => {
-        //         const { hasPassed, message } = rule(this.value);
-
-        //         if (!hasPassed) {
-        //             this.error = message || this.errorMessage;
-        //         }
-
-        //         return hasPassed;
-        //     });
-
-        //     return this.isValid;
-        // },
-        // blurHandler() {
-        //     if (this.isFirstInput) {
-        //         this.validate();
-        //     }
-
-        //     this.isFirstInput = false;
-        // },
-        // reset() {
-        //     this.isFirstInput = true;
-        //     this.isValid = true;
-        //     this.$emit('input', '');
-        // },
     },
 
 };

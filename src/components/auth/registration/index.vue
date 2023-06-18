@@ -11,7 +11,7 @@
             <CustomInput v-model="formData.confirmPassword" placeholder="confirm password..."
                 autocomplete="current-password" type="password" name="password" :rules="confirmPassword"
                 class="registration__input" />
-            <Button class="registration__btn" type="bsubmit">Registration</Button>
+            <Button class="registration__btn" type="submit">Registration</Button>
         </Form>
     </AuthContainer>
 </template>
@@ -74,45 +74,19 @@ export default {
     },
     methods: {
         async handleSubmit() {
-            // const { form } = this.$refs;
             const form = this.$refs.form;
             const isFormValid = await form.validate();
             const { name, password, email } = this.formData;
             console.log(this.formData);
-            console.log(isFormValid)
             if (isFormValid) {
                 try {
-
-                    // this.formData.name = name;
-                    // this.formData.password = password;
-                    // this.formData.email = email;
-
-                    const { data } = await registerUser({ name, password, email });
-                    console.log(data);
-                    // form.reset();
+                    await registerUser({ name, password, email });
+                    this.form.reset();
                 } catch (error) {
                     console.log(error);
                 }
             }
         },
-        // async handleSubmit() {
-        //     const { form } = this.$refs;
-        //     const isFormValid = form.validate();
-        //     const { name, password, email } = this.formData;
-        //     console.log(this.formData);
-        //     if (isFormValid) {
-        //         try {
-        //             const { data } = await registerUser({ name, password, email });
-        //             console.log(data);
-        //             form.reset();
-        //         } catch (error) {
-        //             console.log(error);
-
-        //         }
-
-        //     }
-        // },
-
     },
 }
 </script>
