@@ -77,16 +77,26 @@ export default {
             const form = this.$refs.form;
             const isFormValid = await form.validate();
             const { name, password, email } = this.formData;
+
             console.log(this.formData);
+
             if (isFormValid) {
                 try {
-                    await registerUser({ name, password, email });
-                    this.form.reset();
+                    const { data } = await registerUser({ name, password, email });
+                    console.log(data);
+                    form.reset();
                 } catch (error) {
                     console.log(error);
                 }
+                // try {
+                //     await registerUser({ name, password, email });
+                //     this.form.reset();
+                // } catch (error) {
+                //     console.log(error);
+                // }
             }
         },
+
     },
 }
 </script>

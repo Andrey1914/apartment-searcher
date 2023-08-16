@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper-input">
-        <input :value="modelValue" @input="changeValue" v-bind="$attrs" class="custom-input"
+        <input :value="modelValue" @input="changeValue" @blur="blurHandler" v-bind="$attrs" class="custom-input"
             :class="!isValid && 'custom-input--error'" />
         <span v-if="!isValid" class="custom-input__error">{{ error }}</span>
     </div>
@@ -13,20 +13,22 @@ export default {
         return {
             isValid: true,
             error: '',
+            isFirstInput: true,
         };
     },
-    inject: {
-        form: {
-            default: null,
-        }
-    },
+    // inject: {
+    //     form: {
+    //         default: null,
+    //     }
+    // },
+    inject: ['form'],
     inheritAttrs: false,
     props: {
-        modelValue: {
-            type: String,
-            default: '',
-        },
-
+        modelValue: String,
+        // modelValue: {
+        //     type: String,
+        //     default: '',
+        // },
         errorMessage: {
             type: String,
             default: '',
@@ -38,10 +40,11 @@ export default {
     },
     emits: ['update:modelValue'],
     watch: {
-        value(value) {
-            this.validate(value);
-            console.log(value);
-        },
+        value() {
+            if (this.isFirstInput) return;
+
+            this.validate();
+        }
     },
     mounted() {
         if (!this.form) return;
@@ -59,10 +62,9 @@ export default {
             this.$emit('update:modelValue', event.target.value)
             this.validate(modelValue);
         },
-
-        validate(value) {
+        validate() {
             this.isValid = this.rules.every((rule) => {
-                const { hasPassed, message } = rule(value);
+                const { hasPassed, message } = rule(this.value);
 
                 if (!hasPassed) {
                     this.error = message || this.errorMessage;
@@ -70,9 +72,21 @@ export default {
 
                 return hasPassed;
             });
+
+            return this.isValid;
+        },
+        blurHandler() {
+            if (this.isFirstInput) {
+                this.validate();
+            }
+
+            this.isFirstInput = false;
         },
         reset() {
-            this.$emit('update:modelValue', '')
+            this.isFirstInput = true;
+            this.isValid = true;
+            this.$emit('modelValue', '')
+
         }
     },
 

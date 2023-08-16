@@ -1,5 +1,4 @@
 <template>
-    <!-- <form v-on="listeners" class="form"> -->
     <form class="form">
         <slot></slot>
 
@@ -24,7 +23,8 @@ export default {
             this.inputs.push(input)
         },
         unRegisterInput(input) {
-            this.inputs.filter(item => item !== input)
+            this.inputs = this.inputs.filter(item => item !== input);
+            // this.inputs.filter(item => item !== input)
         },
         validate() {
             return this.inputs.reduce((isValid, input) => {
